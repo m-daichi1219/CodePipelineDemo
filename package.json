@@ -2,6 +2,7 @@
   "name": "codepipelinedemo",
   "version": "1.0.0",
   "scripts": {
+    "build": "cdk synth DemoStack --profile user-local",
     "deploy": "cdk deploy DemoStack --profile user-local",
     "test": "jest tests/.*/*.spec.ts"
   },
