@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
 import { Duration } from 'aws-cdk-lib';
-import { ApiKeySourceType, Cors, LambdaIntegration, Method, MethodLoggingLevel, RestApi } from 'aws-cdk-lib/aws-apigateway';
+import { ApiKeySourceType, Cors, LambdaIntegration, RestApi } from 'aws-cdk-lib/aws-apigateway';
 import { Runtime } from 'aws-cdk-lib/aws-lambda';
 import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { Construct } from 'constructs';

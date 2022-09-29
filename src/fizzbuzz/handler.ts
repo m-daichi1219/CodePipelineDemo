@@ -9,6 +9,7 @@ const fizzBuzzController = new FizzBuzzController(fizzBuzzService);
 export const handler = async (event: APIGatewayEvent, context: Context, callback: APIGatewayProxyCallback) => {
     const { body } = event;
     if (body == null) throw new Error(`bad request body. request: ${body}`);
+    
     const json: FizzBuzzRequestBody = JSON.parse(body);
     const response = await fizzBuzzController.Singular(json.number);
 
